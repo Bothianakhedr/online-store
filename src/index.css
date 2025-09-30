@@ -1,0 +1,69 @@
+@import "tailwindcss";
+.slick-dots {
+  bottom: 35px !important;
+}
+.slick-dots li button:before {
+  color: #fff !important;
+  width: 8px;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 8px;
+  color: black !important;
+}
+.home-slider .slick-next {
+  right: 20px !important;
+}
+.home-slider .slick-next:before {
+  color: black !important;
+  font-size: 27px !important;
+  opacity: 1 !important;
+}
+.home-slider .slick-prev {
+  left: 14px !important;
+  z-index: 99 !important;
+}
+.home-slider .slick-prev:before {
+  color: black !important;
+  font-size: 27px !important;
+  opacity: 1 !important;
+}
+
+.super-deal .slick-prev {
+  left: auto !important;     
+  right: 60px !important;    
+  top: -50px !important;     
+  z-index: 10;
+}
+
+.super-deal .slick-next {
+  right: 20px !important;    
+  top: -50px !important;     
+  z-index: 10;
+}
+
+.super-deal .slick-prev:before,
+.super-deal .slick-next:before {
+  font-size: 12px !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+.super-deal .slick-prev:before,
+.super-deal .slick-next:before {
+    font-family: none;
+    font-size: 12px;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-slide {
+  padding: 0 8px; 
+}
+.slick-list {
+  margin: 0 -8px; }
