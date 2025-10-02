@@ -1,20 +1,21 @@
-import { useHomeProducts } from "../hooks/useHomeProducts";
-import type { IHomeCategory } from "../interfaces";
+import { useHomeProducts } from "../../hooks/useHomeProducts";
+import type { IHomeCategory } from "../../interfaces";
+import Loading from "../Loading";
 
 const HomeCategoriesSection = () => {
   const { isLoading, error, data } = useHomeProducts({
-    url: "/home",
+    resource: "/home",
     queryKey: ["categories"],
     colIndex: 0,
     rowIndex: 1,
     type: "categories",
   });
-  if (isLoading) return <h3>loading</h3>;
+  if (isLoading) return <Loading/>;
 
   if (error) return "An error has occurred: " + error.message;
 
   return (
-    <section className="bg-gray-100 my-5 py-8">
+    <section className="bg-gray-100 my-7 py-7">
       <div className="container mx-auto">
         <div className="title my-5 flex items-center justify-center gap-3">
           <div className="flex gap-0.5 items-center">

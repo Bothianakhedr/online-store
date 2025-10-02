@@ -1,6 +1,6 @@
-import lapTop from "../assets/image/5c7354a9875c6d2460d171c6fbefeae07bd2e94d.png";
-import lapTop2 from "../assets/image/606b64ec3ecf26dbf788da9ac80aec7545cdc7d0.png";
 import SimpleSlider from "./Slider";
+import laptop from "../../assets/image/5c7354a9875c6d2460d171c6fbefeae07bd2e94d.png"
+import laptop1 from "../../assets/image/606b64ec3ecf26dbf788da9ac80aec7545cdc7d0.png"
 
 const SliderSection = () => {
   return (
@@ -9,7 +9,7 @@ const SliderSection = () => {
         
         <div className="w-full h-[380px] bg-[#FFF5BB] rounded-3xl border border-[#DADADA] overflow-hidden">
           <img
-            src={lapTop}
+            src={laptop}
             alt="laptop"
             className="w-full h-[330px] object-cover rounded-t-3xl"
           />
@@ -24,7 +24,7 @@ const SliderSection = () => {
 
         <div className="w-full h-[380px] bg-[#FFF5BB] rounded-3xl border border-[#DADADA] overflow-hidden">
           <img
-            src={lapTop2}
+            src={laptop1}
             alt="laptop"
             className="w-full h-[330px] object-cover rounded-t-3xl"
           />

@@ -3,7 +3,7 @@ import axiosInstance from "../config/axios.config";
 import type { IProduct } from "../interfaces";
 
 export const useHomeProducts = ({
-  url,
+  resource,
   queryKey,
   rowIndex,
   colIndex,
@@ -12,8 +12,11 @@ export const useHomeProducts = ({
   return useQuery({
     queryKey,
     queryFn: async () => {
-      const { data } = await axiosInstance.get(url);
-      console.log(data.rows);
+      const { data } = await axiosInstance.get(resource);
+    
+   console.log(data?.rows);
+   
+      
       console.log(data?.rows[rowIndex]?.columns[colIndex]?.module?.products);
       
 

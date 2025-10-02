@@ -31,7 +31,7 @@ export interface IRegisterForm {
 
 // related to  custom hook 
  export interface IProduct{
-    url:string,
+    resource:string,
     queryKey:string[]
     rowIndex :number,
     colIndex:number,
@@ -39,12 +39,12 @@ export interface IRegisterForm {
 }
 
 // !############# related to api response
-export interface IProductNameAndDescription {
+export interface IResponseNameAndDescription {
   localeCode: string;
   value: string;
 }
 
-export interface IProductImage {
+export interface IResponseImage {
   name: string;
   url: string;
   width: number;
@@ -55,10 +55,10 @@ export interface IProductCard {
   id: number | string;
   price: number;
   salePrice: number;
-  name: IProductNameAndDescription [];
-  shortDescription: IProductNameAndDescription [];
+  name: IResponseNameAndDescription [];
+  shortDescription: IResponseNameAndDescription [];
   inStock?: boolean;
-  images: IProductImage[];
+  images: IResponseImage[];
   rating?: number;
   isActive?: boolean;
   slug?: string;
@@ -69,7 +69,15 @@ export interface IProductCard {
 // ^ ############# home category
 
 export interface IHomeCategory{
-  name:IProductNameAndDescription[]
-  image:IProductImage
+  name:IResponseNameAndDescription[]
+  image:IResponseImage
   id:number| string
+}
+export interface IBannerSectionResponse {
+  image:IResponseImage[],
+  title:IResponseNameAndDescription[],
+  name:string,
+    type: "banner",
+
+    
 }
