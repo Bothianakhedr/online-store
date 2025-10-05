@@ -1,43 +1,147 @@
 @import "tailwindcss";
 .slick-dots {
-  bottom: 35px !important;
+  bottom: 15px !important;
 }
+@media (min-width: 640px) {
+  .slick-dots {
+    bottom: 20px !important;
+  }
+}
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: 25px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .slick-dots {
+    bottom: 35px !important;
+  }
+}
+
 .slick-dots li button:before {
   color: #fff !important;
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
+@media (min-width: 640px) {
+  .slick-dots li button:before {
+    width: 7px;
+    height: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .slick-dots li button:before {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 .slick-dots li.slick-active button:before {
-  font-size: 8px;
+  font-size: 6px;
   color: black !important;
 }
-.home-slider .slick-next {
-  right: 20px !important;
+@media (min-width: 640px) {
+  .slick-dots li.slick-active button:before {
+    font-size: 7px;
+  }
 }
+@media (min-width: 768px) {
+  .slick-dots li.slick-active button:before {
+    font-size: 8px;
+  }
+}
+
+.home-slider .slick-next {
+  right: 10px !important;
+}
+@media (min-width: 640px) {
+  .home-slider .slick-next {
+    right: 15px !important;
+  }
+}
+@media (min-width: 768px) {
+  .home-slider .slick-next {
+    right: 18px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .home-slider .slick-next {
+    right: 20px !important;
+  }
+}
+
 .home-slider .slick-next:before {
   color: black !important;
-  font-size: 27px !important;
+  font-size: 18px !important;
   opacity: 1 !important;
 }
+@media (min-width: 640px) {
+  .home-slider .slick-next:before {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 768px) {
+  .home-slider .slick-next:before {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .home-slider .slick-next:before {
+    font-size: 27px !important;
+  }
+}
+
 .home-slider .slick-prev {
-  left: 14px !important;
+  left: 8px !important;
   z-index: 99 !important;
 }
+@media (min-width: 640px) {
+  .home-slider .slick-prev {
+    left: 12px !important;
+  }
+}
+@media (min-width: 768px) {
+  .home-slider .slick-prev {
+    left: 13px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .home-slider .slick-prev {
+    left: 14px !important;
+  }
+}
+
 .home-slider .slick-prev:before {
   color: black !important;
-  font-size: 27px !important;
+  font-size: 18px !important;
   opacity: 1 !important;
+}
+@media (min-width: 640px) {
+  .home-slider .slick-prev:before {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 768px) {
+  .home-slider .slick-prev:before {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .home-slider .slick-prev:before {
+    font-size: 27px !important;
+  }
 }
 
 .super-deal .slick-prev {
-  left: auto !important;     
-  right: 60px !important;    
-  top: -50px !important;     
+  left: auto !important;
+  right: 60px !important;
+  top: -50px !important;
   z-index: 10;
 }
 
 .super-deal .slick-next {
-  right: 20px !important;    
-  top: -50px !important;     
+  right: 20px !important;
+  top: -50px !important;
   z-index: 10;
 }
 
@@ -50,161 +154,161 @@
 
 .super-deal .slick-prev:before,
 .super-deal .slick-next:before {
-    font-family: none;
-    font-size: 12px;
-    color: black;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
+  font-family: none;
+  font-size: 12px;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slick-slide {
-  padding: 0 8px; 
+  padding: 0 8px;
 }
 .slick-list {
-  margin: 0 -8px; }
+  margin: 0 -8px;
+}
 
-
-  /*^  Loading */
-  .preloader {
-	--hue: 205;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	--primary: hsl(var(--hue),60%,55%);
-	--trans-dur: 0.3s;
-	font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+/*^  Loading */
+.preloader {
+  --hue: 205;
+  --bg: hsl(var(--hue), 10%, 90%);
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: hsl(var(--hue), 60%, 55%);
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
   color: hsl(205, 74%, 87%);
 }
 
 .preloader {
-	text-align: center;
-	max-width: 20em;
-	width: 100%;
+  text-align: center;
+  max-width: 20em;
+  width: 100%;
 }
 .preloader__text {
-	position: relative;
-	height: 1.5em;
+  position: relative;
+  height: 1.5em;
 }
 .preloader__msg {
-	animation: msg 0.3s 13.7s linear forwards;
-	position: absolute;
-	width: 100%;
+  animation: msg 0.3s 13.7s linear forwards;
+  position: absolute;
+  width: 100%;
 }
 .preloader__msg--last {
-	animation-direction: reverse;
-	animation-delay: 14s;
-	visibility: hidden;
+  animation-direction: reverse;
+  animation-delay: 14s;
+  visibility: hidden;
 }
 .cart {
-	display: block;
-	margin: 0 auto 1.5em auto;
-	width: 8em;
-	height: 8em;
+  display: block;
+  margin: 0 auto 1.5em auto;
+  width: 8em;
+  height: 8em;
 }
 .cart__lines,
 .cart__top,
 .cart__wheel1,
 .cart__wheel2,
 .cart__wheel-stroke {
-	animation: cartLines 2s ease-in-out infinite;
+  animation: cartLines 2s ease-in-out infinite;
 }
 .cart__lines {
-	stroke: var(--primary);
+  stroke: var(--primary);
 }
 .cart__top {
-	animation-name: cartTop;
+  animation-name: cartTop;
 }
 .cart__wheel1 {
-	animation-name: cartWheel1;
-	transform: rotate(-0.25turn);
-	transform-origin: 43px 111px;
+  animation-name: cartWheel1;
+  transform: rotate(-0.25turn);
+  transform-origin: 43px 111px;
 }
 .cart__wheel2 {
-	animation-name: cartWheel2;
-	transform: rotate(0.25turn);
-	transform-origin: 102px 111px;
+  animation-name: cartWheel2;
+  transform: rotate(0.25turn);
+  transform-origin: 102px 111px;
 }
 .cart__wheel-stroke {
-	animation-name: cartWheelStroke
+  animation-name: cartWheelStroke;
 }
 .cart__track {
-	stroke: hsla(var(--hue),10%,10%,0.1);
-	transition: stroke var(--trans-dur);
+  stroke: hsla(var(--hue), 10%, 10%, 0.1);
+  transition: stroke var(--trans-dur);
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
-	.cart__track {
-		stroke: hsla(var(--hue),10%,90%,0.1);
-	}
+  :root {
+    --bg: hsl(var(--hue), 10%, 10%);
+    --fg: hsl(var(--hue), 10%, 90%);
+  }
+  .cart__track {
+    stroke: hsla(var(--hue), 10%, 90%, 0.1);
+  }
 }
 
 /* Animations */
 @keyframes msg {
-	from {
-		opacity: 1;
-		visibility: visible;
-	}
-	99.9% {
-		opacity: 0;
-		visibility: visible;
-	}
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99.9% {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 @keyframes cartLines {
-	from,
-	to {
-		opacity: 0;
-	}
-	8%,
-	92% {
-		opacity: 1;
-	}
+  from,
+  to {
+    opacity: 0;
+  }
+  8%,
+  92% {
+    opacity: 1;
+  }
 }
 @keyframes cartTop {
-	from {
-		stroke-dashoffset: -338;
-	}
-	50% {
-		stroke-dashoffset: 0;
-	}
-	to {
-		stroke-dashoffset: 338;
-	}
+  from {
+    stroke-dashoffset: -338;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 338;
+  }
 }
 @keyframes cartWheel1 {
-	from {
-		transform: rotate(-0.25turn);
-	}
-	to {
-		transform: rotate(2.75turn);
-	}
+  from {
+    transform: rotate(-0.25turn);
+  }
+  to {
+    transform: rotate(2.75turn);
+  }
 }
 @keyframes cartWheel2 {
-	from {
-		transform: rotate(0.25turn);
-	}
-	to {
-		transform: rotate(3.25turn);
-	}
+  from {
+    transform: rotate(0.25turn);
+  }
+  to {
+    transform: rotate(3.25turn);
+  }
 }
 @keyframes cartWheelStroke {
-	from,
-	to {
-		stroke-dashoffset: 81.68;
-	}
-	50% {
-		stroke-dashoffset: 40.84;
-	}
+  from,
+  to {
+    stroke-dashoffset: 81.68;
+  }
+  50% {
+    stroke-dashoffset: 40.84;
+  }
 }
