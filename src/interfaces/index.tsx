@@ -10,32 +10,13 @@ export interface IRegisterForm {
   width?: string;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// related to  custom hook 
- export interface IProduct{
-    resource:string,
-    queryKey:string[]
-    rowIndex :number,
-    colIndex:number,
-    type:string
+// related to  custom hook
+export interface IProduct {
+  resource: string;
+  queryKey: string[];
+  rowIndex: number;
+  colIndex: number;
+  type: string;
 }
 
 // !############# related to api response
@@ -55,8 +36,8 @@ export interface IProductCard {
   id: number | string;
   price: number;
   salePrice: number;
-  name: IResponseNameAndDescription [];
-  shortDescription: IResponseNameAndDescription [];
+  name: IResponseNameAndDescription[];
+  shortDescription: IResponseNameAndDescription[];
   inStock?: boolean;
   images: IResponseImage[];
   rating?: number;
@@ -65,19 +46,27 @@ export interface IProductCard {
 }
 // !##################
 
-
 // ^ ############# home category
 
-export interface IHomeCategory{
-  name:IResponseNameAndDescription[]
-  image:IResponseImage
-  id:number| string
+export interface IHomeCategory {
+  name: IResponseNameAndDescription[];
+  image: IResponseImage;
+  id: number | string;
 }
 export interface IBannerSectionResponse {
-  image:IResponseImage[],
-  title:IResponseNameAndDescription[],
-  name:string,
-    type: "banner",
+  image: IResponseImage[];
+  title: IResponseNameAndDescription[];
+  name: string;
+  type: string;
+}
 
-    
+export interface IHomeBrand {
+  image: IResponseImage[];
+  id: string | number;
+  name: IResponseNameAndDescription;
+  slug?: string;
+  logo: {
+    name: string;
+    url: string;
+  };
 }
