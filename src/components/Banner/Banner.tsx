@@ -5,13 +5,12 @@ import Loading from "../Loading";
 const Banner = () => {
   const { data, error, isLoading } = useHomeProducts({
     resource: "/home",
-    queryKey: ["brands"],
+    queryKey: ["banner"],
     colIndex: 0,
     rowIndex: 4,
     type: "banner",
   });
 
-  console.log(data);
 
   if (isLoading) return <Loading />;
   if (error) return "An error has occurred: " + error.message;
